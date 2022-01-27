@@ -13,7 +13,7 @@ const nuevoBool = true;
 const nuevaResta = 10 - 5 === 5;
 
 // Resuelve el siguiente problema matemático:
-const nuevaMultiplicacion = 10 * 4 === 40 ;
+const nuevaMultiplicacion= 10*4===40;
 
 // Resuelve el siguiente problema matemático:
 const nuevoModulo = 21 % 5 === 1;
@@ -62,10 +62,11 @@ function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (x === y){ 
-    return true; }
-    else { 
-      false }
+  if (x === y) { 
+    return true; 
+  }else{ 
+  return false 
+}
   
 }
 
@@ -96,7 +97,7 @@ function mayorQueCincuenta(num) {
     return true;} 
     else 
     {
-      return false;
+    return false;
     }
   
 }
@@ -104,7 +105,7 @@ function mayorQueCincuenta(num) {
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-  return x/y;
+  return x % y;
   
 }
 
@@ -112,7 +113,7 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num /2===0) {
+  if (num %2===0) {
     return true;}
     else {
       return false;}
@@ -123,7 +124,7 @@ function esImpar(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
 
-  if (num /2 ===1) {
+  if (num %2 ===1) {
     return true;} 
     else {
       return false;}
@@ -167,7 +168,7 @@ function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random() 
 
-  return Math.Random() 
+  return Math.random() 
 
 }
 
@@ -231,7 +232,7 @@ function retornarPerimetro(lado){
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-  return (base * altura) /2 
+  return(base*altura)/2; 
 
 }
 
